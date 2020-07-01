@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello World</title>
+</head>
+<body style="font: caption;" bgcolor="lightblue">
+	{% block content %}
+		<form action="login/" method="post">
+			{% csrf_token %}
+			Enter username :
+			<input type="text" name="nm">
+			Enter Password : 
+			<input type="Password" name="pass">
+		<input type="submit" value="Login">
+		</form>
+	{% endblock %}
+
+</body>
+</html>
